@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <title dir="ltr">Sistema Solar</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="sistema solar.jfif" type="image/x-icon">
+
+</head>
+  
+  <body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    <section>
+      <!-- links e descrições dos planetas -->
+      <ul id="descriptions">
+        <li>
+          <h2 id="sol">Sol</h2>
+          <p>O Sol é uma estrela anã amarela que os demais corpos celestes do Sistema Solar orbitam. Ele é formado
+            por gases e não dispõe de nenhuma superfície sólida. O Sol é uma estrela localizada na Via Láctea.
+            Trata-se da estrela mais próxima do planeta Terra e a maior de todo o Sistema Solar.</p>
+        </li>
+  
+        <li>
+          <h2 id="mercury">Mercúrio</h2>
+          <p>O planeta Mercúrio possui três recordes: é o mais rápido, o mais próximo do sol e o menor planeta do
+            sistema solar. Mercúrio é o primeiro planeta do sistema solar, a contar a partir da proximidade com
+            o Sol, distando-se em apenas 57,9 milhões de quilômetros da estrela em média.</p>
+        </li>
+  
+        <li>
+          <h2 id="venus">Vênus</h2>
+          <p>O planeta Vênus é o segundo do nosso sistema solar a partir do Sol e o mais próximo da Terra, a
+            apenas 61 milhões de quilômetros de distância. Uma de suas principais características é o fato de,
+            como um planeta rochoso, sua superfície ser composta por vales e altas montanhas, cheias de vulcões.
+          </p>
+        </li>
+  
+        <li>
+          <h2 id="earth">Terra</h2>
+          <p>A Terra é considerada um planeta telúrico e possui sua estrutura interna dividida em: crosta
+            terrestre, manto e núcleo. Além da estrutura interna, há também a externa que corresponde à
+            litosfera, hidrosfera, biosfera e atmosfera, que são o que oferece as condições favoráveis para a
+            existência de vida aqui.</p>
+        </li>
+  
+        <li>
+          <h2 id="mars">Marte</h2>
+          <p>Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar, atrás apenas de Mercúrio.
+            Batizado em homenagem a divindade romana da guerra, muitas vezes é descrito como o "Planeta
+            Vermelho", porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada.
+          </p>
+        </li>
+  
+        <li>
+          <h2 id="jupiter">Júpiter</h2>
+          <p>Júpiter é o maior planeta do Sistema Solar. Sua órbita é a quinta a partir do Sol, situado entre
+            Marte e Saturno. Ganhou esse nome em homenagem ao deus Júpiter, da mitologia romana. É um planeta
+            gasoso, o que significa que não possui uma superfície sólida.</p>
+        </li>
+  
+        <li>
+          <h2 id="saturn">Saturno</h2>
+          <p>Trata-se do segundo maior planeta desse sistema, atrás apenas de Júpiter, apresentando um diâmetro de
+            120 536 km, que é cerca de nove vezes maior que o diâmetro equatorial terrestre. O movimento de
+            rotação do planeta Saturno é bastante acelerado, o que reverbera no achatamento de seus polos.</p>
+        </li>
+  
+        <li>
+          <h2 id="uranus">Urano</h2>
+          <p>Planeta Urano é um dos maiores do Sistema Solar, sendo o sétimo a partir do Sol. Dispõe de um sistema
+            de anéis e é formado principalmente por gases e líquidos. Ouça o texto abaixo! O planeta Urano é o
+            terceiro maior do Sistema Solar e está posicionado na sétima órbita a partir do Sol.</p>
+        </li>
+  
+        <li>
+          <h2 id="neptune">Netuno</h2>
+          <p>Netuno, um dos gigantes gasosos e gelados, é o oitavo e último planeta do nosso Sistema Solar, desde
+            a reclassificação de Plutão em 2006. A temperatura média por lá é de 223 ºC negativos!</p>
+        </li>
+
+      </ul>
+    </section>
+
+
+
+    
+    <!-- Contêiner principal que representa o universo -->
+    <div id="universe" class="scale-stretched">
+      
+      <!-- Contêiner que representa a galáxia -->
+      <div id="galaxy">
+        
+        <!-- Contêiner que representa o sistema solar, com a Terra como destaque inicial -->
+        <div id="solar-system" class="earth">
+          
+          <!-- Órbita de Mercúrio -->
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet"></div>
+            </div>
+          </div>
+
+          <!-- Órbita de Vênus -->
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet"></div>
+            </div>
+          </div>
+
+          <!-- Órbita da Terra -->
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <!-- Órbita da Lua ao redor da Terra -->
+              <div class="orbit">
+                <div class="pos">
+                  <!-- Representação visual da Lua -->
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <!-- Informações sobre a Terra -->
+              <div class="planet"></div>
+            </div>
+          </div>
+
+          <!-- Órbita de Marte -->
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet"></div>
+            </div>
+          </div>
+
+          <!-- Órbita de Júpiter -->
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet"></div>
+            </div>
+          </div>
+
+          <!-- Órbita de Saturno -->
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <!-- Anéis de Saturno representados aqui -->
+                <div class="ring"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Órbita de Urano -->
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+              </div>
+            </div>
+          </div>
+
+          <!-- Órbita de Netuno -->
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet"></div>
+            </div>
+          </div>
+
+          <!-- O Sol no centro do sistema solar -->
+          <div id="sun"></div>
+
+          <!-- yoda -->
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
